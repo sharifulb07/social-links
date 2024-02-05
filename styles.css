@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+  /* Colors */
+  --primary-green: hsl(75, 94%, 57%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+
+  /* Typography */
+  --font-family: Inter;
+  --font-light: 400;
+  --font-semi-medium: 400;
+  --font-medium: 700;
+}
+
+/* BASAE START */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--off-black);
+  color: var(--neutral-white);
+  text-align: center;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--neutral-white);
+  font-size: 14px;
+}
+
+.btn {
+  width: 80%;
+  padding: 10px 40px;
+  cursor: pointer;
+  margin-bottom: 12px;
+  background-color: var(--neutral-grey);
+
+  font-weight: var(--font-medium);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: var(--primary-green);
+}
+
+a:hover {
+  color: var(--off-black);
+}
+
+.socials-btn {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+/* BASAE END */
+
+/* mobile version */
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+    min-width: 375px;
+    background-color: var(--dark-grey);
+    margin: 60px auto;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .avatar_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .profile-info {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .profile-info p {
+    font-size: 12px;
+    color: var(--primary-green);
+  }
+  .socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .socials p {
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
