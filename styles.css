@@ -27,13 +27,16 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
 body {
   font-family: var(--font-family);
   background-color: var(--off-black);
   color: var(--neutral-white);
-  text-align: center;
-  margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
@@ -45,24 +48,20 @@ a {
   font-size: 14px;
 }
 
-.btn {
+.btn-link {
   width: 80%;
   padding: 10px 40px;
   cursor: pointer;
   margin-bottom: 12px;
   background-color: var(--neutral-grey);
-
   font-weight: var(--font-medium);
   border: none;
   outline: none;
   border-radius: 5px;
 }
 
-.btn:hover {
+.btn-link:hover {
   background-color: var(--primary-green);
-}
-
-a:hover {
   color: var(--off-black);
 }
 
@@ -72,6 +71,10 @@ a:hover {
   text-align: center;
   margin: 0 auto;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
 }
 
 /* BASAE END */
@@ -83,7 +86,7 @@ a:hover {
     width: 375px;
     min-width: 375px;
     background-color: var(--dark-grey);
-    margin: 60px auto;
+    margin: 100px auto;
     text-align: center;
     border-radius: 5px;
   }
@@ -127,6 +130,15 @@ a:hover {
     font-size: 13px;
     font-weight: 400;
   }
+}
+
+.container {
+  min-width: 375px;
+  background-color: var(--dark-grey);
+  margin: 30%px auto;
+  text-align: center;
+  border-radius: 5px;
+  align-items: center;
 }
 
 .attribution {
